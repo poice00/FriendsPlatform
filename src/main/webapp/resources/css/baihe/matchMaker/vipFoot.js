@@ -1,0 +1,18 @@
+var footer = '';
+footer +='<div id=\"vipFoot\">';
+footer +='	<div class=\"foot\">';
+footer +='		<a href=\"http:\/\/www.baihe.com\/\" class=\"logo\">百合网<\/a>';
+footer +='		<div class=\"footText\">';
+footer +='			<p>北京总部：北京市朝阳区阜通东大街1号院望京SOHO 5号楼（塔3）A(B)座6层<\/p>';
+footer +='			<p>幸福专线：400-1520-555 ( 8：00 至 20：00 ) <\/p>';
+footer +='			<p class=\"textSmall\">版权所有©2005-2014 百合网　京ICP证041124号　京公网安备110105000655号<\/p>';
+footer +='		<\/div>';
+footer +='		<ul>';
+footer +='			<li><a href=\"http://help.baihe.com/index.php?action=list&cat=568&listid=28#\">关于百合<\/a><\/li>';
+footer +='			<li><a href=\"http://media.baihe.com/html/index.html\">媒体关注<\/a><\/li>';
+footer +='			<li><a href=\"http://help.baihe.com/index.php?action=list&cat=571&listid=28#\">联系我们<\/a><\/li>';
+footer +='			<li><a href=\"http://help.baihe.com/index.php?action=list&cat=572&listid=28#\">诚聘人才<\/a><\/li>';
+footer +='		<\/ul>';
+footer +='	</div>';
+footer +='</div>';
+document.write(footer);

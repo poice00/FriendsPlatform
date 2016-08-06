@@ -1,0 +1,143 @@
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html{color:#000;background:#fff;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea{font-family: punctuation,\5FAE\8F6F\96C5\9ED1;}
+input,select,textarea{font-size:100%;}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;}
+fieldset,img{border:0;}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{display:block;}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{border:0;font-variant:normal;}
+a{text-decoration: none;}
+a:focus{outline:none;}
+
+/* 一致的 del 样式 */
+del {text-decoration:line-through;}
+
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {list-style:none;}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {text-align:left;}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:500;
+}
+
+/* 清理浮动 */
+.fn-clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;
+}
+.fn-clear {zoom:1; /* for IE6 IE7 */}
+.section { text-align: center; overflow: hidden;}
+/*
+.section2 p { position: relative; left: -120%;}
+.section3 p { position: relative; bottom: -120%;}
+.section4 p { display: none;}*/
+img{border:none;}
+
+body,html{height: 100%; width: 100%; overflow: hidden;}
+.anBg{height: 100%; background:url(../img/bg_dt.jpg) no-repeat; background-size: cover; position: relative;}
+.anBg .logo{position: absolute; top:30px; left: 70px; width:8%;}
+
+
+.contAl{position: absolute; width: 100%; height: 100%; top:0; left:0; overflow: hidden;}
+.dtBox{ margin: 0 auto; padding: 90px 0 40px; min-width: 1200px;}
+.dtBox .t1{width: 8%; margin: 0 auto; display: block;}
+.dtCent{ width: 50%; background:rgba(255,255,255,0.3); margin:30px auto; overflow: hidden;}
+.dtCent .h1{font-size: 30px; font-family:"Microsoft YaHei"; color: #444444; text-align: center; padding: 35px 0 35px;}
+.dtCent .btnBox{width: 620px; margin: 0 auto 50px; overflow: hidden; height: 46px;}
+.dtCent .btnBox .btnBl{float: left; width:290px; display: inline; margin:0 15px 0 0;}
+.dtCent .btnBox .btnBr{float: left; width:290px; display: inline; margin:0 0 0 15px;}
+.dtCent .btL1{float: right; background: #0096e8; font-size: 20px; color: #fff; padding:9px 20px; text-align: center; border-radius: 5px;}
+.dtCent .btR1{float: left; background: #8bc900; font-size: 20px; color: #fff; padding:9px 20px; text-align: center; border-radius: 5px;}
+.dtBox .t21{width: 18%; margin: 0 auto; display: block;}
+.dtBox .t21 img{display: block; width: 100%;}
+.dtBox .t2{width: 10%; margin: 0 auto; display: block;}
+.dtBox .t2 img{display: block; width: 100%;}
+
+.foot{position: absolute; bottom:0; width: 100%; background:url(../img/foot_bg.png) repeat-x; height: 30px; text-align: center; padding: 70px 0 0 0; font-size: 12px; color: #fff;}
+
+.pt-page-moveToLeft {
+    -webkit-animation: moveToLeft .9s ease both;
+    -moz-animation: moveToLeft .9s ease both;
+    animation: moveToLeft .9s ease both;
+}
+.pt-page-moveFromLeft {
+    -webkit-animation: moveFromLeft .9s ease both;
+    -moz-animation: moveFromLeft .9s ease both;
+    animation: moveFromLeft .9s ease both;
+}
+.pt-page-moveToRight {
+    -webkit-animation: moveToRight .9s ease both;
+    -moz-animation: moveToRight .9s ease both;
+    animation: moveToRight .9s ease both;
+}
+
+.pt-page-moveFromRight {
+    -webkit-animation: moveFromRight .9s ease both;
+    -moz-animation: moveFromRight .9s ease both;
+    animation: moveFromRight .9s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+    to { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveToLeft {
+    to { -moz-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+    to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveFromLeft {
+    from { -moz-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+    from { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveToRight { 
+    to { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveToRight { 
+    to { -moz-transform: translateX(100%); }
+}
+@keyframes moveToRight { 
+    to { transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRight {
+    from { -moz-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+    from { transform: translateX(100%); }
+}
+
+@media screen and (min-width: 1440px){
+    .dtBox{ margin: 0 auto; padding: 120px 0 40px; min-width: 1200px;}
+    .dtCent .h1{font-size: 30px; font-family:"Microsoft YaHei"; color: #444444; text-align: center; padding: 50px 0 35px;}
+    .dtCent .btnBox{width: 620px; margin: 0 auto 80px; overflow: hidden; height: 46px;}
+}
+
+.loading{margin: 0 auto; padding:200px 0 0; text-align: center;}
